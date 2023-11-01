@@ -24,7 +24,8 @@ namespace b1
             List<Department> ldp = obj.getData();
             foreach(var item in ldp)
             {
-                cbbDepartment.Items.Add(item);
+                cbbDepartment.Items.Add(item.DepartmentName);
+                cbbDepartment.SelectedIndex = 0;
             }    
         }
     }
